@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    background: #293f50;
+    height: 140px;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+.shadow{
+    height: 3px;
+    background: #648880;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(50%, 50%);
+    right: 50%;
+    max-width: 137px;
+    min-width: 137px;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 28%;
+    min-width: 190px;
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+
+.nav_left span{
+    font-weight: lighter;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_right_up{
+    display: flex;
+    width: 75%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #648880;
+    margin: 10px 30px 10px 10px;
+}
+
+.nav_right_down{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 75%;
+    margin: 10px;
+}
+
+.nav_right_down a span{
+    margin: 0 10px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background: #293f50;
+    height: 100px;
+}
+
+.footer_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    color: #648880;
+}
+
+.footer_right{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_right span{
+    margin: 0 10px;
+}
+
+.footer_right div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 75%;
+    margin: 10px;
+}
+
+.footer_right div a span{
+    color: white;
+}
+
+
+
+/* Comment this is wei below. */
+
+
+
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.lorem {
+    background:linear-gradient(to right, #a1d3b0, #f6f1d3);
+    text-align: center;
+    padding: 50px;
+}
+
+
+.leftbox {
+    width: 50%;
+    padding-top:80px;
+    padding-left:80px;
+    padding-bottom:80px;
+}
+
+.firstline {
+    padding-bottom: 10px;
+    font-size: 30px;
+    max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+
+.secondline {
+    max-width:960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+.firstbox {
+    text-align: left;
+    padding-bottom:10px;
+    font-size: 20px;
+}
+
+.secondbox {
+    font-size: 15px;
+    color:#293f50;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.thirdbox {
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+.fourthbox {
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+span {
+    display: block;
+}
+
+
+li {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+form {
+    padding-top: 80px;
+    text-align: left;
+    padding-right: 80px;
+    margin-left: 20px;
+}
+
+.word1 {
+    padding-bottom: 5px;
+}
+
+.word2 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.word3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 7px 16px;
+    background-color:#648880;
+    color: white;
+    display: block;
+    border-radius: 4px;
+    border: 0;
+}
+
+
+/* Comment this is wei above. */
+
+@media only screen and (max-width: 750px) {
+    .nav_right_down {
+        width: unset;
+    }
+
+    .display_area {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .nav_right_up{
+        display: none;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .nav_right{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    h3{
+        min-width: unset;
+        width: 100%;
+        font-size: 21px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .up_part_text_div p{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-width: unset;
+    }
+    .footer_left{
+        text-align: center;
+    }
+    .footer_right div{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    main {
+        max-width: 780px;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .leftbox {
+        display:block;
+        text-align: center;
+    }
+
+    form {
+        display: block;
+        padding-top: 0;
+        padding-right: 0;
+        width: 90%;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .leftbox {
+        width: 90%;
+        padding-top:80px;
+        padding-bottom:10px;
+        padding-left: 0;
+    }
+
+    .name1 {
+        max-width:600px;
+        height:25px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+
+    .name2 {
+        max-width:600px;
+        height:25px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+
+    .name3 {
+        max-width:600px;
+        height:25px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+}

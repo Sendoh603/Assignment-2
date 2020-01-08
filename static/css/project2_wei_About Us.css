@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    background: #293f50;
+    height: 140px;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+.shadow{
+    height: 3px;
+    background: #648880;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(50%, 50%);
+    right: 50%;
+    max-width: 137px;
+    min-width: 137px;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 28%;
+    min-width: 190px;
+    color: white;
+    font-size: 40px;
+    position: relative;
+}
+
+.nav_left span{
+    font-weight: lighter;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_right_up{
+    display: flex;
+    width: 75%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #648880;
+    margin: 10px 30px 10px 10px;
+}
+
+.nav_right_down{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 75%;
+    margin: 10px;
+}
+
+.nav_right_down a span{
+    margin: 0 10px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background: #293f50;
+    height: 100px;
+}
+
+.footer_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28%;
+    color: #648880;
+}
+
+.footer_right{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_right span{
+    margin: 0 10px;
+}
+
+.footer_right div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 75%;
+    margin: 10px;
+}
+
+.footer_right div a span{
+    color: white;
+}
+
+
+
+/* Comment this is wei below. */
+
+.lorem {
+    background:linear-gradient(to right, #a1d3b0, #f6f1d3);
+    text-align: center;
+    padding: 50px;
+}
+
+
+.subtitle1 {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.subtitle2 {
+    text-align: left;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+.p1 {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 30px;
+}
+
+.p2 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.p3 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.p4 {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+}
+
+.p5 {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.firstline {
+    padding-bottom: 10px;
+    font-size: 30px;
+    max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+
+.secondline {
+    max-width:960px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+
+/* Comment this is wei above. */
+
+
+@media only screen and (max-width: 750px) {
+    .nav_right_down{
+        width: unset;
+    }
+    .display_area{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .nav_right_up{
+        display: none;
+    }
+    nav{
+        flex-wrap: wrap;
+    }
+    .nav_right{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    h3{
+        min-width: unset;
+        width: 100%;
+        font-size: 21px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .up_part_text_div p{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-width: unset;
+    }
+    .footer_left{
+        text-align: center;
+    }
+    .footer_right div{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+.subtitle1 {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.subtitle2 {
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+
+.p1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.p2 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.p3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.p4 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.p5 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+}
