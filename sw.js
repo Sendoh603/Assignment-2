@@ -21,6 +21,22 @@ self.addEventListener('install', function(event) {
             '/contact_us.html',
             '/home.html'
           ]
+        ).catch((error) => {console.log('something went wrong %0' + error)});
+      })
+    );
+  });
+
+  self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys().then(function(contentOfCaches) {
+        return Promise.all(
+          contentOfCaches.filter(function(contentOfCaches) {
+            // Return true if you want to remove this cache,
+            // but remember that caches are shared across
+            // the whole origin
+          }).map(function(contentOfCaches) {
+            return caches.delete(contentOfCaches);
+          })
         );
       })
     );
